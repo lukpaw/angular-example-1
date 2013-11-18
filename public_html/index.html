@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <title>AngularJS resource with JSONP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-resource.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  
+  <body>
+    <div ng-controller="MyController">
+      Graph for:
+      <input type="text" ng-model="graph.username" ng-blur="getGraph()">
+      <h3>{{result.name}}</h3>
+      <div>{{result.about}}</div>
+    </div>
+  </body>
+
+</html>
